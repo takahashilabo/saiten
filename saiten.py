@@ -65,7 +65,7 @@ for f in files:
         o = ws.cell(row=row, column=col+1)
         o.value = 1 #１点という意味
         o.alignment = Alignment(horizontal='left', vertical='top')
-        o.font = openpyxl.styles.fonts.Font(size=30)
+        o.font = openpyxl.styles.fonts.Font(size=20)
         ws.column_dimensions[get_column_letter(col+1)].width = 5
 
         #解答欄画像に合わせて列幅調整＆セルに画像挿入
